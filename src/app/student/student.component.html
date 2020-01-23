@@ -1,4 +1,5 @@
-<p>Student: {{student.name}}</p>
-<div [hidden]="!student.isJedi">
+<p>Student: {{student?.name}}</p>
+<div [hidden]="!student?.isJedi">
     <p>Jedi Temple: Coruscant</p>
 </div>
+<p *ngIf="student.isJedi">Nao esta contida no DOM</p>
