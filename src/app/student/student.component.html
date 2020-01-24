@@ -1,5 +1,7 @@
-<p>Student: {{student?.name}}</p>
+<p>Student: <a (click)="clicked()" href="#">{{student?.name}}</a></p>
 <div [hidden]="!student?.isJedi">
     <p>Jedi Temple: Coruscant</p>
+    <p><button (click)="textfild.focus()">Focus</button></p>
+    <textarea #textfild></textarea>
 </div>
 <p *ngIf="student.isJedi">Nao esta contida no DOM</p>

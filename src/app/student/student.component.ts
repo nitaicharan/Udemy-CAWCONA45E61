@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Student } from "./student.model";
+import { Student } from './student.model';
 
 @Component({
   selector: 'app-student',
@@ -8,10 +8,14 @@ import { Student } from "./student.model";
 })
 export class StudentComponent implements OnInit {
 
-  @Input() student: Student
+  @Input() student: Student;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  clicked() {
+    window.alert('Estudante clickado foi: ' + this.student.name);
   }
 }
