@@ -14,7 +14,7 @@ Project available to access at: https://nitaicharan.github.io/Udemy-CAWCONA45E61
 <!--[![](Udemy-CAWCONA45E61.png)](https://nitaicharan.github.io/Udemy-CAWCONA45E61/)-->
 <a href="https://nitaicharan.github.io/Udemy-CAWCONA45E61">
   <p align="center">
-    <img src="Udemy-CAWCONA45E61.git">
+    <img width="350" src="Udemy-CAWCONA45E61.png">
   </p>
 </a>
 
@@ -28,7 +28,7 @@ This project was part of the Udemy course "Construindo Aplicações Web Com o No
 
 ### Certificate
 
-This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)][course-url] on ??/??/???? as taught by [Tarso Bessa][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
+This certificate above verifies that [Nitai Charan][udemy-url] successfully completed the course [Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)][course-url] on 02/18/2020 as taught by [Tarso Bessa][instructor-url] on Udemy. The certificate indicates the entire course was completed as validated by the student.
 
 <p align="center">
   <img src="certificate.jpg">
@@ -46,43 +46,14 @@ This certificate above verifies that [Nitai Charan][udemy-url] successfully comp
 ## Development GitHub Pages
 
 ```
-ng build --prod
-index.html:base:"/" -> index.html:base:"/Udemy-CAWCONA45E61/"
-cp dist/curso/index.html dist/course/404.html
+ng build --prod --base-href=/Udemy-CAWCONA45E61/
 
 git add -A
 git commit -m <titule> <message>
 git push origin <branch>
-git subtree push --prefix dist/course origin gh-pages
-git push origin `git subtree split --prefix dist/course/ master`:gh-pages --force
+git subtree push --prefix dist origin gh-pages
+git push origin `git subtree split --prefix dist/ master`:gh-pages --force
 ```
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -91,7 +62,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 [course-url]: https://www.udemy.com/course/angular-pt/
 [instructor-url]: https://www.udemy.com/user/tarso-bessa/
-[certificate-url]: https://ude.my/#
+[certificate-url]: https://ude.my/UC-0a553019-e60e-4e4e-b32d-c57518bc3c66
+
 <!-- CONTACT SHIELDS -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-white.svg?logo=linkedin&colorB=0077B5&logoColor=white
